@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Condicionales 6</title>
+</head>
+<body>
+    <script>
+    let marca, modelo, precio, descuento = 0;
+    marca= prompt("Marca del coche?", "0");
+    modelo= prompt("Modelo del coche?", "0");
+    if ((marca =="ford")&& (modelo == "fiesta"))
+    {
+        descuento = 5;
+
+    }
+    if ((marca =="ford") && (modelo == "focus"))
+    {
+        descuento = 10;
+    }
+    document.write(`<h3> El descuento es del ${descuento} % </h3>`);
+    
+</script>
+</body>
+</html>

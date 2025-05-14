@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 7</title>
+    
+</head>
+<body>
+    <form action="PAtata">
+        <label for="">Introduce los grados en celsius</label>
+        <input type="text" name="celsius" id="celsius">
+        <input type="button" value="Convertir" onclick="calcula()">
+        <br>
+        <label for="">Resultado en Farenheit</label>
+        <input type="text" name="resultado en celsius" id="resultado" readonly>
+        <br>
+        <input type="reset" value="Borrar">
+    </form>
+    <script>
+        function calcula() {
+            let celsius = document.getElementById("celsius").value;
+            let resultado = (celsius * 9/5) + 32;
+            document.getElementById("resultado").value = resultado;
+        }
+        </script>
+</body>
+</html>

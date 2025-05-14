@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 2</title>
+</head>
+<body>
+    <script>
+        function porcentaje(){
+            let number1 = document.fdatos.entrada1.value;
+            let numb = parseInt(number1);
+            let resultado = numb * 0.10;
+            document.writeln("El 10% de " + numb + " es: " + resultado);
+        }
+    </script>
+
+    <form name="fdatos">
+        Escribe un número: <input type="text" size="10" name="entrada1">
+        <input type="button" value="Pulsa aquí" onclick="porcentaje()">
+    </form>
+</body>
+</html>

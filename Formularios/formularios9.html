@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Notas</title>
+    <style>
+        body{
+            background-color: gray;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+   
+</head>
+<body>
+  <form >
+    <label for="nota1">Nota :</label>
+    <input type="number" id="nota1" required>
+    <br>
+    <label for="porcentaje1">Porcentaje :</label>
+    <input type="number" id="porcentaje1" required>
+    <br>
+    <label for="nota2">Nota</label>
+    <input type="number" id ="nota2" required>
+    <br>
+    <label for="porcentaje2">Porcentaje :</label>
+    <input type="number" id="porcentaje2" required>
+    <br>
+    <button type="button" onclick="calcularNotaMedia()">Calcular</button>
+</form>
+    <script>
+        function calcularNotaMedia() {
+           let nota1 = parseInt(document.getElementById("nota1").value);
+           let porcentaje1 = parseInt(document.getElementById("porcentaje1").value);
+           let nota2 = parseInt(document.getElementById("nota2").value);
+           let porcentaje2 = parseInt(document.getElementById("porcentaje2").value);
+           let notaMedia = (nota1 * porcentaje1 + nota2 * porcentaje2) / (porcentaje1 + porcentaje2);
+              alert("La nota media es: " + notaMedia);
+            }
+    </script>
+</body>
+</html>
